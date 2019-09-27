@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+
+import RegistrationStepOne from './views/RegistrationStepOne.vue'
+import RegistrationStepTwo from './views/RegistrationStepTwo.vue'
+import RegistrationStepThree from './views/RegistrationStepThree.vue'
+import RegistrationFinal from './views/RegistrationFinal.vue'
 
 Vue.use(Router)
 
@@ -8,16 +12,31 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      redirect: '/registration'
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      path: '/registration',
+      redirect: '/registration/step1',
+    },
+    {
+      path: '/registration/step1',
+      name: 'regStep1',
+      component: RegistrationStepOne
+    },
+    {
+      path: '/registration/step2',
+      name: 'regStep2',
+      component: RegistrationStepTwo
+    },
+    {
+      path: '/registration/step3',
+      name: 'regStep3',
+      component: RegistrationStepThree
+    },
+    {
+      path: '/registration/final',
+      name: 'regFinal',
+      component: RegistrationFinal,
+    },    
   ]
 })

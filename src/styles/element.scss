@@ -1,0 +1,38 @@
+@import 'variables';
+
+.el-progress-bar__outer {
+  background-color: $color-ss-background-light !important;
+}
+.el-progress-bar__inner {
+  background-color: $color-ss-white !important;
+}
+
+.el-form-item {
+  margin-bottom: 30px !important;
+}
+
+.el-form-item__content {
+  line-height: 30px !important;
+}
+
+.el-form-item__label {
+  line-height: 20px !important;
+}
+
+.el-select {
+  width: 100%;
+}
+
+.el-input__inner {
+  border: 0 !important;
+  border-bottom: 2px solid $color-ss-border !important;
+  height: 30px !important;
+  padding-left: 0 !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.el-radio {
+  margin: 10px 0;
+  white-space: normal !important;
+}

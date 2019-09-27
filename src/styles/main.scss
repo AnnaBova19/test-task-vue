@@ -1,0 +1,32 @@
+@import 'variables';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.dark-theme {
+  background: $color-ss-background;
+  color: $color-ss-white;
+}
+.card-wrap {
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.control-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sublabel {
+  font-style: italic;
+  color: $color-ss-gray;
+}
+
+.slider-label {
+  display: flex;
+  justify-content: center;
+  color: $color-ss-gray;
+}
